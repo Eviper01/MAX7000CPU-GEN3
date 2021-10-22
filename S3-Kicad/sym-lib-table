@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name S3_Schematic-rescue)(type Legacy)(uri ${KIPRJMOD}/S3_Schematic-rescue.lib)(options "")(descr ""))
+  (lib (name Gen3Parts)(type Legacy)(uri ${KIPRJMOD}/Gen3Parts.lib)(options "")(descr ""))
 )

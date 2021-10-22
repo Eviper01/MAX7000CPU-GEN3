@@ -1,0 +1,28 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CY62128ELL-45ZXA
+D SRAM Chip Async Single 5V 1M-bit 128K x 8 45ns Automotive 32-Pin TSOP-I Tray
+F https://www.arrow.com/en/products/cy62128ell-45zxa/cypress-semiconductor
+$ENDCMP
+#
+$CMP CY62136EV30LL-45ZSXI
+D CYPRESS SEMICONDUCTOR - CY62136EV30LL-45ZSXI - IC, SRAM, 2 Mbit, 128K x 16bit, 45 ns Access Time, Parallel, 2.2 V to 3.6 V supply, TSOP-II-44
+F https://ms.componentsearchengine.com/Datasheets/2/CY62136EV30LL-45ZSXI.pdf
+$ENDCMP
+#
+$CMP SN74LVC1GX04DCKR
+D Crystal Oscillator Driver
+F http://www.ti.com/lit/gpn/sn74lvc1gx04
+$ENDCMP
+#
+$CMP SST39VF800A-70-4C-EKE
+D 2.7 to 3.6V 8Mbit Multi-Purpose Flash
+F https://componentsearchengine.com/Datasheets/1/SST39VF800A-70-4C-EKE.pdf
+$ENDCMP
+#
+$CMP XC9572XL-10TQG100C
+D XC9572XL-10TQG100C XC9572XL-10TQG100C, CPLD XC9500XL Flash 72 Cells, 72 I/O, 4 Labs, ISP, 3  3.6 V 100-Pin TQFP
+F https://www.xilinx.com/support/documentation/data_sheets/ds057.pdf
+$ENDCMP
+#
+#End Doc Library
