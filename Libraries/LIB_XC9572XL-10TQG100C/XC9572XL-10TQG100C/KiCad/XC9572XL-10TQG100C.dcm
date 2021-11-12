@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP XC9572XL-10TQG100C
+D XC9572XL-10TQG100C XC9572XL-10TQG100C, CPLD XC9500XL Flash 72 Cells, 72 I/O, 4 Labs, ISP, 3  3.6 V 100-Pin TQFP
+K
+F https://www.xilinx.com/support/documentation/data_sheets/ds057.pdf
+$ENDCMP
+#
+#End Doc Library

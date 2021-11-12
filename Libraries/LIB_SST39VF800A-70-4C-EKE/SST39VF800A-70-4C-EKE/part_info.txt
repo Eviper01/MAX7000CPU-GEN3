@@ -1,0 +1,9 @@
+Manufacturer=Microchip
+PartNumber=SST39VF800A-70-4C-EKE
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=48
+Version=4.1
+Released=2015-04-16 09:48:08
+Downloaded=2021-10-18 16:21:43
+3D=Y

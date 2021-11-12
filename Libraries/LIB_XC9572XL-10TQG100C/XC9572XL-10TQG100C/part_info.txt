@@ -1,0 +1,9 @@
+Manufacturer=XILINX
+PartNumber=XC9572XL-10TQG100C
+PartCategory=Integrated Circuit
+PackageCategory=Quad Flat Packages
+PinCount=100
+Version=1.1
+Released=2017-06-07 13:36:32
+Downloaded=2021-10-17 14:00:20
+3D=Y

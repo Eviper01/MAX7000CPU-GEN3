@@ -1,0 +1,167 @@
+
+(rules PCB S3_Schematic
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 50)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 127.0)
+    (clear 127.2)
+    (clear 63.5 (type smd_to_turn_gap))
+    (clear 200.2 (type default_Power))
+    (clear 31.8 (type smd_smd))
+    (clear 200.2 (type smd_Power))
+    (clear 200.2 (type "kicad_default"_Power))
+    (clear 200.2 (type Power_Power))
+  )
+  (padstack "Via[0-1]_400:200_um"
+    (shape
+      (circle F.Cu 400.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 400.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_400:200_um" "Via[0-1]_400:200_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_400:200_um-kicad_default" "Via[0-1]_400:200_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_400:200_um-Power" "Via[0-1]_400:200_um" Power
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_400:200_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_400:200_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 127.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C1-Pad1)" "Net-(C2-Pad1)" /GPIO/P0 "Net-(D1-Pad1)" /GPIO/P31 "Net-(D2-Pad1)" /GPIO/P1 "Net-(D3-Pad1)"
+    /GPIO/P30 "Net-(D4-Pad1)" /GPIO/P2 "Net-(D5-Pad1)" /GPIO/P29 "Net-(D6-Pad1)" /GPIO/P3 "Net-(D7-Pad1)"
+    /GPIO/P28 "Net-(D8-Pad1)" /GPIO/P4 "Net-(D9-Pad1)" /GPIO/P27 "Net-(D10-Pad1)" /GPIO/P5 "Net-(D11-Pad1)"
+    /GPIO/P26 "Net-(D12-Pad1)" /GPIO/P6 "Net-(D13-Pad1)" /GPIO/P25 "Net-(D14-Pad1)" /GPIO/P7 "Net-(D15-Pad1)"
+    /GPIO/P24 "Net-(D16-Pad1)" /GPIO/P8 "Net-(D17-Pad1)" /GPIO/P23 "Net-(D18-Pad1)" /GPIO/P9 "Net-(D19-Pad1)"
+    /GPIO/P22 "Net-(D20-Pad1)" /GPIO/P10 "Net-(D21-Pad1)" /GPIO/P21 "Net-(D22-Pad1)" /GPIO/P11 "Net-(D23-Pad1)"
+    /GPIO/P20 "Net-(D24-Pad1)" /GPIO/P12 "Net-(D25-Pad1)" /GPIO/P19 "Net-(D26-Pad1)" /GPIO/P13 "Net-(D27-Pad1)"
+    /GPIO/P18 "Net-(D28-Pad1)" /GPIO/P14 "Net-(D29-Pad1)" /GPIO/P17 "Net-(D30-Pad1)" /GPIO/P15 "Net-(D31-Pad1)"
+    /GPIO/P16 "Net-(D32-Pad1)" ~ALDD "Net-(D33-Pad1)" ~AHDD "Net-(D34-Pad1)" ~BLDD "Net-(D35-Pad1)"
+    ~BHDD "Net-(D36-Pad1)" "Net-(D37-Pad1)" "Net-(D38-Pad1)" "Net-(D39-Pad1)" "Net-(D40-Pad1)" /ProgramCounter/PC0 "Net-(D41-Pad1)"
+    /ProgramCounter/PC1 "Net-(D42-Pad1)" /ProgramCounter/PC2 "Net-(D43-Pad1)" /ProgramCounter/PC3 "Net-(D44-Pad1)" /ProgramCounter/PC4 "Net-(D45-Pad1)"
+    /ProgramCounter/PC5 "Net-(D46-Pad1)" /ProgramCounter/PC6 "Net-(D47-Pad1)" /ProgramCounter/PC7 "Net-(D48-Pad1)" /ProgramCounter/PC8 "Net-(D49-Pad1)"
+    /ProgramCounter/PC9 "Net-(D50-Pad1)" /ProgramCounter/PC10 "Net-(D51-Pad1)" /ProgramCounter/PC11 "Net-(D52-Pad1)" /ProgramCounter/PC12 "Net-(D53-Pad1)"
+    /ProgramCounter/PC13 "Net-(D54-Pad1)" /ProgramCounter/PC14 "Net-(D55-Pad1)" /ProgramCounter/PC15 "Net-(D56-Pad1)" "ProgramInstructDisable_5V" "PS\2_CLK_5V"
+    "PS\2_Data_5V" "TCK_5V" "TDO_5V" "TDI_5V" "TMS_5V" "PS\2_CLK_3.3V" "PS\2_Data_3.3V" CLK
+    /ALU/B15 /ALU/B14 /ALU/B13 /ALU/B12 /ALU/B11 /ALU/B10 /ALU/B9 /ALU/B8
+    /ALU/B7 /ALU/B6 /ALU/B5 /ALU/B4 /ALU/B3 /ALU/B2 /ALU/B1 /ALU/B0
+    /ALU/Ins15 /ALU/Ins14 /ALU/Ins13 /ALU/Ins12 /ALU/Ins11 /ALU/Ins10 /ALU/Ins9 /ALU/Ins8
+    /ALU/Ins7 /ALU/Ins6 /ALU/Ins5 /ALU/Ins4 /ALU/Ins3 /ALU/Ins2 /ALU/Ins1 /ALU/Ins0
+    TMS TDI TDO TCK "Net-(R11-Pad1)" ~PortAReadLow ~PortBReadLow ~PortAReadHigh
+    ~PortBReadHigh PortBWriteHigh PortBWriteLow PortAWriteHigh PortAWriteLow RMAControl RJBControl R4Control
+    R3Control R2Control R1Control "DDR_Load" ~RMARightOutput ~RJBRightOutput ~R4Out ~R2Out
+    ~RMALeftOutput ~RJBLeftOutput ~R3Out ~R1Out ~CounterLoad "Net-(R77-Pad2)" CounterClear ~CounterOutEnable
+    ~StackLoad StackClear ~StackOut ~MemOutEnable ~MemWriteControl ProgramInsDisable ~MainRegOutputControl ~MainRegLeftOutput
+    ~MainRegRightOutput ~RamAddrEnable RegLatch CounterUp StackDown StackUp InsRegControl MainRegReadControl
+    ~PortEnable /ALU/State1 /ALU/State0 /ALU/State2 "~I-O_RegisterLatch" ~GeneralRegisterLatch "Net-(U12-Pad9)" "Net-(U13-Pad14)"
+    "Net-(U13-Pad13)" "Net-(U13-Pad12)" "Net-(U13-Pad11)" "Net-(U13-Pad9)" "Net-(U13-Pad8)" "Net-(U13-Pad7)" "Net-(U13-Pad6)" "~ALU_Enable"
+    "Net-(U15-Pad6)" /ProgramCounter/JB0 /ProgramCounter/JB2 /ProgramCounter/JB3 /ProgramCounter/JB1 /ProgramCounter/JB4 /ProgramCounter/JB6 /ProgramCounter/JB7
+    /ProgramCounter/JB5 /ProgramCounter/JB8 "Net-(U18-Pad13)" "Net-(U18-Pad12)" /ProgramCounter/JB10 /ProgramCounter/JB11 /ProgramCounter/JB9 /ProgramCounter/JB12
+    "Net-(U19-Pad13)" "Net-(U19-Pad12)" /ProgramCounter/JB14 /ProgramCounter/JB15 /ProgramCounter/JB13 /StackPointer/SP3 /StackPointer/SP2 /StackPointer/SP0
+    /StackPointer/SP1 /StackPointer/SP7 /StackPointer/SP6 /StackPointer/SP4 /StackPointer/SP5 "Net-(U24-Pad13)" "Net-(U24-Pad12)" /StackPointer/SP11
+    /StackPointer/SP10 /StackPointer/SP8 /StackPointer/SP9 "Net-(U25-Pad13)" "Net-(U25-Pad12)" /StackPointer/SP15 /StackPointer/SP14 /StackPointer/SP12
+    /StackPointer/SP13 /Registers/Acc0 /Registers/Acc1 /Registers/Acc2 /Registers/Acc3 /Registers/Acc4 /Registers/Acc5 /Registers/Acc6
+    /Registers/Acc7 /ALU/OddR0 /ALU/OddR1 /ALU/OddR2 /ALU/OddR3 /ALU/OddR4 /ALU/OddR5 /ALU/OddR6
+    /ALU/OddR7 /ALU/EvenR0 /ALU/EvenR1 /ALU/EvenR2 /ALU/EvenR3 /ALU/EvenR4 /ALU/EvenR5 /ALU/EvenR6
+    /ALU/EvenR7 /Registers/RA0 /Registers/RA1 /Registers/RA2 /Registers/RA3 /Registers/RA4 /Registers/RA5 /Registers/RA6
+    /Registers/RA7 /Registers/Acc8 /Registers/Acc9 /Registers/Acc10 /Registers/Acc11 /Registers/Acc12 /Registers/Acc13 /Registers/Acc14
+    /Registers/Acc15 /ALU/OddR8 /ALU/OddR9 /ALU/OddR10 /ALU/OddR11 /ALU/OddR12 /ALU/OddR13 /ALU/OddR14
+    /ALU/OddR15 /ALU/EvenR8 /ALU/EvenR9 /ALU/EvenR10 /ALU/EvenR11 /ALU/EvenR12 /ALU/EvenR13 /ALU/EvenR14
+    /ALU/EvenR15 /Registers/RA8 /Registers/RA9 /Registers/RA10 /Registers/RA11 /Registers/RA12 /Registers/RA13 /Registers/RA14
+    /Registers/RA15 FLASHPAGE2 FLASHPAGE1 FLASHPAGE0 "RAM_PAGE" "Net-(J3-Pad2)" "Net-(R61-Pad2)" "Net-(R64-Pad2)"
+    "Net-(R76-Pad2)" "Net-(R102-Pad2)" "Net-(R114-Pad1)" "Net-(R115-Pad1)" "Net-(R116-Pad1)" "Net-(R119-Pad1)" "Net-(R124-Pad1)" "Net-(R125-Pad1)"
+    "Net-(R126-Pad1)" "Net-(R127-Pad1)" "Net-(R132-Pad1)" "Net-(R133-Pad1)" "Net-(R142-Pad2)" "Net-(R143-Pad2)" "Net-(R144-Pad2)" "Net-(R145-Pad2)"
+    "Net-(R146-Pad2)" "Net-(R147-Pad2)" "Net-(R148-Pad2)" "Net-(R151-Pad2)" "Net-(R153-Pad2)" "Net-(U1-Pad1)" "Net-(U2-Pad11)" "Net-(U2-Pad9)"
+    "Net-(U12-Pad47)" "Net-(U12-Pad15)" "Net-(U12-Pad14)" "Net-(U12-Pad13)" "Net-(U12-Pad12)" "Net-(U12-Pad10)" "Net-(U14-Pad11)" "Net-(U14-Pad9)"
+    "Net-(U15-Pad14)" "Net-(U15-Pad13)" "Net-(U15-Pad12)" "Net-(U15-Pad11)" "Net-(U15-Pad9)" "Net-(U15-Pad8)" "Net-(U15-Pad7)" "Net-(U17-Pad6)"
+    "Net-(U20-Pad13)" "Net-(U20-Pad12)" "Net-(U21-Pad13)" "Net-(U21-Pad12)" "/Boot Flash/MA0" "/Boot Flash/MA1" "/Boot Flash/MA2" "/Boot Flash/MA3"
+    "/Boot Flash/MA4" "/Boot Flash/MA5" "/Boot Flash/MA6" "/Boot Flash/MA7" "/Boot Flash/MA8" "/Boot Flash/MA9" "/Boot Flash/MA10" "/Boot Flash/MA11"
+    "/Boot Flash/MA12" "/Boot Flash/MA13" "/Boot Flash/MA14" "/Boot Flash/MA15" "Net-(U26-Pad13)" "Net-(U26-Pad12)" "Net-(U27-Pad13)" "Net-(U27-Pad12)"
+    "Net-(U30-Pad28)" "Net-(U30-Pad23)" "Net-(U63-Pad80)" "Net-(U63-Pad73)" "Net-(U63-Pad46)" "Net-(U63-Pad43)" "Net-(U63-Pad34)" "Net-(U63-Pad24)"
+    "Net-(U63-Pad19)" "Net-(U63-Pad7)" "Net-(U63-Pad2)" "Net-(U64-Pad13)" "Net-(U64-Pad12)" "Net-(U64-Pad7)" "Net-(U65-Pad47)" "Net-(U65-Pad15)"
+    "Net-(U65-Pad14)" "Net-(U65-Pad13)" "Net-(U65-Pad12)" "Net-(U65-Pad10)" "Net-(U65-Pad9)" FlashOut "Net-(U17-Pad3)" "Net-(U17-Pad2)"
+    "Net-(U17-Pad1)" "Net-(U63-Pad94)" "Net-(U63-Pad93)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 127.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    GND +3V3
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

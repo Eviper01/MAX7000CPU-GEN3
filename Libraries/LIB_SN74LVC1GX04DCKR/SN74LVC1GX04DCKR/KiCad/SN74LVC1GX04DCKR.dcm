@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74LVC1GX04DCKR
+D Crystal Oscillator Driver
+K
+F http://www.ti.com/lit/gpn/sn74lvc1gx04
+$ENDCMP
+#
+#End Doc Library

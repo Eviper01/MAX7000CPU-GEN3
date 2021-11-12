@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 8 9
 Title ""
 Date ""
 Rev ""
@@ -18,8 +18,8 @@ L Gen3Parts:XC9572XL-10TQG100C U?
 U 1 1 66923070
 P 1950 3050
 AR Path="/66923070" Ref="U?"  Part="1" 
-AR Path="/63123391/66923070" Ref="U61"  Part="1" 
-F 0 "U61" H 3450 2050 50  0000 L CNN
+AR Path="/63123391/66923070" Ref="U63"  Part="1" 
+F 0 "U63" H 3450 2050 50  0000 L CNN
 F 1 "XC9572XL-10TQG100C" H 3050 1950 50  0000 L CNN
 F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 4800 4150 50  0001 L CNN
 F 3 "https://www.xilinx.com/support/documentation/data_sheets/ds057.pdf" H 4800 4050 50  0001 L CNN
@@ -86,8 +86,8 @@ L power:GND #PWR?
 U 1 1 66923095
 P 5000 6800
 AR Path="/66923095" Ref="#PWR?"  Part="1" 
-AR Path="/63123391/66923095" Ref="#PWR0242"  Part="1" 
-F 0 "#PWR0242" H 5000 6550 50  0001 C CNN
+AR Path="/63123391/66923095" Ref="#PWR0157"  Part="1" 
+F 0 "#PWR0157" H 5000 6550 50  0001 C CNN
 F 1 "GND" H 5005 6627 50  0000 C CNN
 F 2 "" H 5000 6800 50  0001 C CNN
 F 3 "" H 5000 6800 50  0001 C CNN
@@ -124,8 +124,8 @@ L power:+3.3V #PWR?
 U 1 1 669230A9
 P 3450 1400
 AR Path="/669230A9" Ref="#PWR?"  Part="1" 
-AR Path="/63123391/669230A9" Ref="#PWR0243"  Part="1" 
-F 0 "#PWR0243" H 3450 1250 50  0001 C CNN
+AR Path="/63123391/669230A9" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 3450 1250 50  0001 C CNN
 F 1 "+3.3V" H 3465 1573 50  0000 C CNN
 F 2 "" H 3450 1400 50  0001 C CNN
 F 3 "" H 3450 1400 50  0001 C CNN
@@ -166,37 +166,37 @@ Ins14
 Text Label 4950 5250 0    50   ~ 0
 Ins15
 Text Label 2350 6750 3    50   ~ 0
-B0
-Text Label 2450 6750 3    50   ~ 0
-B1
-Text Label 2550 6750 3    50   ~ 0
-B2
-Text Label 2650 6750 3    50   ~ 0
-B3
-Text Label 2850 6750 3    50   ~ 0
-B4
-Text Label 2950 6750 3    50   ~ 0
-B5
-Text Label 3150 6750 3    50   ~ 0
-B6
-Text Label 3250 6750 3    50   ~ 0
-B7
-Text Label 3350 6750 3    50   ~ 0
-B8
-Text Label 3550 6750 3    50   ~ 0
-B9
-Text Label 3650 6750 3    50   ~ 0
-B10
-Text Label 3750 6750 3    50   ~ 0
-B11
-Text Label 3850 6750 3    50   ~ 0
-B12
-Text Label 4550 6750 3    50   ~ 0
-B13
-Text Label 4650 6750 3    50   ~ 0
-B14
-Text Label 4950 5350 0    50   ~ 0
 B15
+Text Label 2450 6750 3    50   ~ 0
+B14
+Text Label 2550 6750 3    50   ~ 0
+B13
+Text Label 2650 6750 3    50   ~ 0
+B12
+Text Label 2850 6750 3    50   ~ 0
+B11
+Text Label 2950 6750 3    50   ~ 0
+B10
+Text Label 3150 6750 3    50   ~ 0
+B9
+Text Label 3250 6750 3    50   ~ 0
+B8
+Text Label 3350 6750 3    50   ~ 0
+B7
+Text Label 3550 6750 3    50   ~ 0
+B6
+Text Label 3650 6750 3    50   ~ 0
+B5
+Text Label 3750 6750 3    50   ~ 0
+B4
+Text Label 3850 6750 3    50   ~ 0
+B3
+Text Label 4550 6750 3    50   ~ 0
+B2
+Text Label 4650 6750 3    50   ~ 0
+B1
+Text Label 4950 5350 0    50   ~ 0
+B0
 NoConn ~ 3950 6750
 Text Label 1950 3950 2    50   ~ 0
 OddR8
@@ -295,16 +295,6 @@ Wire Wire Line
 Connection ~ 1900 5050
 Text GLabel 1950 5150 0    50   Input ~ 0
 CLK
-Text Label 2350 1750 1    50   ~ 0
-State0
-Text Label 2450 1750 1    50   ~ 0
-State1
-Text Label 2550 1750 1    50   ~ 0
-State2
-Text GLabel 2550 1050 0    50   Input ~ 0
-JumpS2
-Text GLabel 2550 950  0    50   Input ~ 0
-JumpS1
 Text GLabel 2650 1200 0    50   Output ~ 0
 ~CounterLoad
 Wire Wire Line
@@ -352,8 +342,8 @@ L Device:R R?
 U 1 1 66923122
 P 2300 7150
 AR Path="/66923122" Ref="R?"  Part="1" 
-AR Path="/63123391/66923122" Ref="R113"  Part="1" 
-F 0 "R113" V 2300 7400 50  0000 C CNN
+AR Path="/63123391/66923122" Ref="R149"  Part="1" 
+F 0 "R149" V 2300 7400 50  0000 C CNN
 F 1 "50K" V 2400 7400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2230 7150 50  0001 C CNN
 F 3 "~" H 2300 7150 50  0001 C CNN
@@ -365,8 +355,8 @@ L Device:R R?
 U 1 1 66923128
 P 2300 7350
 AR Path="/66923128" Ref="R?"  Part="1" 
-AR Path="/63123391/66923128" Ref="R114"  Part="1" 
-F 0 "R114" V 2300 7600 50  0000 C CNN
+AR Path="/63123391/66923128" Ref="R150"  Part="1" 
+F 0 "R150" V 2300 7600 50  0000 C CNN
 F 1 "50K" V 2400 7600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2230 7350 50  0001 C CNN
 F 3 "~" H 2300 7350 50  0001 C CNN
@@ -604,11 +594,11 @@ Wire Wire Line
 	7100 5100 7200 5100
 Wire Wire Line
 	7100 5200 7200 5200
-Text Label 7200 5000 0    50   ~ 0
+Text Label 6800 5650 0    50   ~ 0
 State0
-Text Label 7200 5100 0    50   ~ 0
+Text Label 6800 5750 0    50   ~ 0
 State1
-Text Label 7200 5200 0    50   ~ 0
+Text Label 6800 5850 0    50   ~ 0
 State2
 Text HLabel 8050 1200 0    50   Output ~ 0
 OddR[0...15]
@@ -811,10 +801,10 @@ EvenR15
 Wire Bus Line
 	8050 3000 8100 3000
 $Comp
-L Connector_Generic:Conn_01x16 J10
+L Connector_Generic:Conn_01x16 J9
 U 1 1 671BA204
 P 10250 2050
-F 0 "J10" H 10330 2042 50  0000 L CNN
+F 0 "J9" H 10330 2042 50  0000 L CNN
 F 1 "Conn_01x16" H 10330 1951 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10250 2050 50  0001 C CNN
 F 3 "~" H 10250 2050 50  0001 C CNN
@@ -854,10 +844,10 @@ B14
 Text Label 10050 2850 2    50   ~ 0
 B15
 $Comp
-L Connector_Generic:Conn_01x16 J11
+L Connector_Generic:Conn_01x16 J10
 U 1 1 6720DB20
 P 10250 3750
-F 0 "J11" H 10330 3742 50  0000 L CNN
+F 0 "J10" H 10330 3742 50  0000 L CNN
 F 1 "Conn_01x16" H 10330 3651 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10250 3750 50  0001 C CNN
 F 3 "~" H 10250 3750 50  0001 C CNN
@@ -896,14 +886,180 @@ Text Label 10050 4450 2    50   ~ 0
 Ins14
 Text Label 10050 4550 2    50   ~ 0
 Ins15
+$Comp
+L 74xx:74LS193 U?
+U 1 1 61889452
+P 6300 6050
+AR Path="/61889452" Ref="U?"  Part="1" 
+AR Path="/6399DF91/61889452" Ref="U?"  Part="1" 
+AR Path="/63123391/61889452" Ref="U64"  Part="1" 
+F 0 "U64" H 5900 6700 50  0000 C CNN
+F 1 "74hc193" H 6000 6600 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 6300 6050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls193.pdf" H 6300 6050 50  0001 C CNN
+	1    6300 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618AA937
+P 5650 5650
+AR Path="/618AA937" Ref="R?"  Part="1" 
+AR Path="/63123391/618AA937" Ref="R142"  Part="1" 
+F 0 "R142" V 5750 6050 50  0000 C CNN
+F 1 "50K" V 5850 6050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5580 5650 50  0001 C CNN
+F 3 "~" H 5650 5650 50  0001 C CNN
+	1    5650 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618D1945
+P 5650 5850
+AR Path="/618D1945" Ref="R?"  Part="1" 
+AR Path="/63123391/618D1945" Ref="R144"  Part="1" 
+F 0 "R144" V 5550 6250 50  0000 C CNN
+F 1 "50K" V 5650 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5580 5850 50  0001 C CNN
+F 3 "~" H 5650 5850 50  0001 C CNN
+	1    5650 5850
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5800 6350 0    50   Input ~ 0
+CLK
+$Comp
+L power:+3.3V #PWR?
+U 1 1 618E5CB0
+P 6300 5350
+AR Path="/618E5CB0" Ref="#PWR?"  Part="1" 
+AR Path="/63123391/618E5CB0" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR0156" H 6300 5200 50  0001 C CNN
+F 1 "+3.3V" H 6315 5523 50  0000 C CNN
+F 2 "" H 6300 5350 50  0001 C CNN
+F 3 "" H 6300 5350 50  0001 C CNN
+	1    6300 5350
+	1    0    0    -1  
+$EndComp
+Text Label 2550 1750 1    50   ~ 0
+State2
+Text Label 2450 1750 1    50   ~ 0
+State1
+Text Label 2350 1750 1    50   ~ 0
+State0
+$Comp
+L Device:R R?
+U 1 1 618FAD20
+P 5650 6150
+AR Path="/618FAD20" Ref="R?"  Part="1" 
+AR Path="/63123391/618FAD20" Ref="R146"  Part="1" 
+F 0 "R146" V 5450 6550 50  0000 C CNN
+F 1 "50K" V 5550 6550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5580 6150 50  0001 C CNN
+F 3 "~" H 5650 6150 50  0001 C CNN
+	1    5650 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6190AC5C
+P 5650 5750
+AR Path="/6190AC5C" Ref="R?"  Part="1" 
+AR Path="/63123391/6190AC5C" Ref="R143"  Part="1" 
+F 0 "R143" V 5650 6150 50  0000 C CNN
+F 1 "50K" V 5750 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5580 5750 50  0001 C CNN
+F 3 "~" H 5650 5750 50  0001 C CNN
+	1    5650 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6191E7BD
+P 5650 5950
+AR Path="/6191E7BD" Ref="R?"  Part="1" 
+AR Path="/63123391/6191E7BD" Ref="R145"  Part="1" 
+F 0 "R145" V 5450 6350 50  0000 C CNN
+F 1 "50K" V 5550 6350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5580 5950 50  0001 C CNN
+F 3 "~" H 5650 5950 50  0001 C CNN
+	1    5650 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6192587D
+P 5650 6450
+AR Path="/6192587D" Ref="R?"  Part="1" 
+AR Path="/63123391/6192587D" Ref="R147"  Part="1" 
+F 0 "R147" V 5550 6850 50  0000 C CNN
+F 1 "50K" V 5650 6850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5580 6450 50  0001 C CNN
+F 3 "~" H 5650 6450 50  0001 C CNN
+	1    5650 6450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 5350 6300 5350
+Wire Wire Line
+	5500 5350 5500 5650
+Connection ~ 5500 5650
+Wire Wire Line
+	5500 5650 5500 5750
+Connection ~ 5500 5750
+Wire Wire Line
+	5500 5750 5500 5850
+Connection ~ 5500 5850
+Wire Wire Line
+	5500 5850 5500 5950
+Connection ~ 5500 5950
+Wire Wire Line
+	5500 5950 5500 6150
+Connection ~ 5500 6150
+Wire Wire Line
+	5500 6150 5500 6450
+Connection ~ 6300 5350
+NoConn ~ 6800 6150
+NoConn ~ 6800 6350
+$Comp
+L power:GND #PWR0158
+U 1 1 6193E8C7
+P 6300 6850
+F 0 "#PWR0158" H 6300 6600 50  0001 C CNN
+F 1 "GND" H 6305 6677 50  0000 C CNN
+F 2 "" H 6300 6850 50  0001 C CNN
+F 3 "" H 6300 6850 50  0001 C CNN
+	1    6300 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6194CE78
+P 5650 6550
+AR Path="/6194CE78" Ref="R?"  Part="1" 
+AR Path="/63123391/6194CE78" Ref="R148"  Part="1" 
+F 0 "R148" V 5400 6950 50  0000 C CNN
+F 1 "50K" V 5500 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5580 6550 50  0001 C CNN
+F 3 "~" H 5650 6550 50  0001 C CNN
+	1    5650 6550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 6850 5500 6850
+Wire Wire Line
+	5500 6850 5500 6550
+Connection ~ 6300 6850
+NoConn ~ 2550 950 
+NoConn ~ 2550 1050
 Wire Bus Line
 	7000 4850 7000 5100
 Wire Bus Line
-	7100 1200 7100 2750
-Wire Bus Line
-	7050 3000 7050 4600
+	8100 3000 8100 4600
 Wire Bus Line
 	8100 1200 8100 2800
 Wire Bus Line
-	8100 3000 8100 4600
+	7050 3000 7050 4600
+Wire Bus Line
+	7100 1200 7100 2750
 $EndSCHEMATC

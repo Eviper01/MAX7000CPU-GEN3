@@ -1,0 +1,9 @@
+Manufacturer=Cypress Semiconductor
+PartNumber=CY62136EV30LL-45ZSXI
+PartCategory=Undefined or Miscellaneous
+PackageCategory=Small Outline Packages
+PinCount=44
+Version=1.1
+Released=
+Downloaded=2021-10-15 09:52:43
+3D=Y

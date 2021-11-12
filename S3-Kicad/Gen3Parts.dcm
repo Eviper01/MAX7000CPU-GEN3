@@ -1,5 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 74HC4040
+D 74HC(T)4040 - 12-stage binary ripple counter@en-us
+F https://assets.nexperia.com/documents/data-sheet/74HC_HCT4040.pdf
+$ENDCMP
+#
+$CMP AT25DN512C-XMHF-T
+D NOR Flash 512K, 2.3V, 104Mhz Serial Flash
+F https://ms.componentsearchengine.com/Datasheets/1/AT25DN512C-XMHF-T.pdf
+$ENDCMP
+#
 $CMP CY62128ELL-45ZXA
 D SRAM Chip Async Single 5V 1M-bit 128K x 8 45ns Automotive 32-Pin TSOP-I Tray
 F https://www.arrow.com/en/products/cy62128ell-45zxa/cypress-semiconductor
